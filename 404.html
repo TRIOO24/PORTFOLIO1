@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Page Not Found | Bhuvanagiri D</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#FFFFFF;--primary:#DC2626;--secondary:#991B1B;--text:#111827;--text-soft:#6B7280;--border:#E5E7EB;}
+  *{box-sizing:border-box;}
+  body{
+    margin:0;min-height:100vh;background:var(--bg);color:var(--text);
+    font-family:'JetBrains Mono',monospace;display:flex;align-items:center;justify-content:center;
+    flex-direction:column;text-align:center;padding:24px;
+  }
+  .code{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(4rem,14vw,8rem);color:var(--primary);margin:0;line-height:1;}
+  .trace{
+    text-align:left;max-width:480px;width:100%;background:#0F1117;color:#E5E7EB;border-radius:12px;
+    padding:20px 24px;margin:28px 0;font-size:.85rem;line-height:1.7;overflow-x:auto;
+  }
+  .trace .err{color:#F87171;}
+  .trace .cm{color:#6B7280;}
+  a.btn{
+    display:inline-block;margin-top:8px;padding:12px 26px;border-radius:100px;
+    background:var(--primary);color:#fff;text-decoration:none;font-weight:600;font-size:.9rem;
+    transition:background .2s, transform .2s;
+  }
+  a.btn:hover{background:var(--secondary);transform:translateY(-2px);}
+  p.sub{color:var(--text-soft);max-width:40ch;}
+</style>
+</head>
+<body>
+  <p class="code">404</p>
+  <pre class="trace"><span class="cm"># Traceback (most recent call last)</span>
+<span class="err">PageNotFoundError</span>: route does not exist
+  <span class="cm">at</span> router.resolve(window.location.pathname)</pre>
+  <p class="sub">This page wandered off. Let's get you back to the working build.</p>
+  <a class="btn" href="/">Return home →</a>
+</body>
+</html>
